@@ -21,13 +21,13 @@ public class Main {
         System.out.println();
         System.out.println();
 
-        m1.edgeDetection(matrix, matrix.length, matrix.length);
+        m1.edgeDetection(matrix);
 
     }
 
-    public void edgeDetection(int a[][], int rows, int cols) {
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+    public void edgeDetection(int a[][]) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a.length; j++) {
                 if (i == 0 || j == 0 || i == 5 || j == 5 || i == 1 || j == 1 || i == 4 || j == 4)
                     System.out.print(a[i][j] + " ");
                 else
